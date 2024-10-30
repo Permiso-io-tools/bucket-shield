@@ -1,0 +1,45 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="pyinstaller" />
+            <item index="1" class="java.lang.String" itemvalue="docker" />
+            <item index="2" class="java.lang.String" itemvalue="flask_httpauth" />
+            <item index="3" class="java.lang.String" itemvalue="alive_progress" />
+            <item index="4" class="java.lang.String" itemvalue="websocket_server" />
+            <item index="5" class="java.lang.String" itemvalue="flask_bcrypt" />
+            <item index="6" class="java.lang.String" itemvalue="flask_jwt_extended" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E125" />
+          <option value="E501" />
+          <option value="E124" />
+          <option value="W191" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="simulib.Azure.Attacks.AzureAD.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
