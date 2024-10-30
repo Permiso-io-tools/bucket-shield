@@ -101,7 +101,7 @@ def check_cloudtrail_log_flow_status_old(trail_name, days_back=1):
         },
         {
             'AttributeKey': 'ResourceName',
-            'AttributeValue': f'arn:aws:cloudtrail:eu-north-1:410265998611:trail/{trail_name}'
+            'AttributeValue': f'arn:aws:cloudtrail:::{trail_name}'
         }
     ]
 
