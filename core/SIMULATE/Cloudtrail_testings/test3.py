@@ -5,18 +5,17 @@ from termcolor import colored
 def cloudtrail_related_events_test3(resource_name, client, attack_service, account, region):
 
 
-    # #StopLogging  
-    #     try:
-    #         client.stop_logging(Name=resource_name)
-    #         #print("[*] cloudtrail:StopLogging Executed")
-    #         print (colored("[*] cloudtrail:StopLogging Executed", "green"))
-    #     except Exception as e: 
-    #         #print("[*] cloudtrail:StopLogging Execution Failed")
-    #         print (colored("[*] cloudtrail:StopLogging Execution Failed", "red"), e)
+    #StopLogging  
+        try:
+            client.stop_logging(Name=resource_name)
+            #print("[*] cloudtrail:StopLogging Executed")
+            print (colored("[*] cloudtrail:StopLogging Executed", "green"))
+        except Exception as e: 
+            #print("[*] cloudtrail:StopLogging Execution Failed")
+            print (colored("[*] cloudtrail:StopLogging Execution Failed", "red"), e)
 
     #StartLogging
     try:
-        # Create a CloudTrail client
         client.start_logging(Name=resource_name)
         # Print success message
         print(colored("[*] cloudtrail:StartLogging Executed", "green"))
