@@ -1,0 +1,15 @@
+{
+    "CLOUDTRAIL-TRAIL-NAMES": [
+        "arn:aws:cloudtrail:eu-north-1:200802171337:trail/MyTrickyTrail",
+        "arn:aws:cloudtrail:eu-north-1:200802171337:trail/MyTrickyTrail2"
+    ],
+    "S3-BUCKETS-NAME-AND-PREFIX": [
+        "cloudtrail-in-kosova/AWSLogs",
+        "cloudtrail-in-shqiperia/AWSLogs"
+    ],
+    "KMS-KEY-ARNS": [
+        "arn:aws:kms:eu-north-1:200802171337:key/12345678-1337-1337-1337-c0ffeec0ffee"
+    ],
+    "AWS-PROFILE": "bucket_shield_profile",
+    "AWS-REGION": "eu-north-1"
+}

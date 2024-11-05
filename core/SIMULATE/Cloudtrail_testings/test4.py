@@ -5,9 +5,7 @@ def cloudtrail_related_events_test4(resource_name, client, attack_service, accou
 
     #DeleteTrail
     try:
-            client.delete_bucket(Bucket=resource_name)
-            print("[*] cloudtrail:DeleteTrail Executed")
-            print (colored("[*] cloudtrail:DeleteTrail Executed", "green"))
+        client.delete_bucket(Bucket=resource_name)
+        print(colored("[*] cloudtrail:DeleteTrail Executed", "green"))
     except: 
-            print("[*] cloudtrail:DeleteTrail Execution Failed")
-            print (colored("[*] cloudtrail:DeleteTrail Execution Failed", "red"))
+        print(colored("[*] cloudtrail:DeleteTrail Execution Failed", "red"))

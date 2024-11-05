@@ -4,11 +4,9 @@ from termcolor import colored
 from botocore.exceptions import ClientError
 import json
 
-
 def bucket_related_events_test2(resource_name, client, attack_service, account, region):
 
-
- # PutBucketPolicy with embedded policy
+    # PutBucketPolicy with embedded policy
     # This policy allows public read access (s3:GetObject) to objects within the specified S3 bucket
     try:
         bucket_policy = {
@@ -23,7 +21,6 @@ def bucket_related_events_test2(resource_name, client, attack_service, account, 
                 }
             ]
         }
-        
         client.put_bucket_policy(Bucket=resource_name, Policy=json.dumps(bucket_policy))
         print(colored("[*] s3:PutBucketPolicy Executed", "green"))
     except ClientError as e:

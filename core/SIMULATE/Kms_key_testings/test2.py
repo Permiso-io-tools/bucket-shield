@@ -4,19 +4,15 @@ from termcolor import colored
 
 def kms_related_events_test2(resource_name, client, attack_service, account, region):
 
-    # #ScheduleKeyDeletion
+    #ScheduleKeyDeletion
     try:
         client.schedule_key_deletion(KeyId=resource_name)
-        #print("[*] kms:ScheduleKeyDeletion Executed")
-        print (colored("[*] kms:ScheduleKeyDeletion Executed", "green"))
-    except: 
-        #print("[*] kms:ScheduleKeyDeletion Execution Failed")
-        print (colored("[*] kms:ScheduleKeyDeletion Execution Failed", "red"))
-        # Handle pending deletion state
+        print(colored("[*] kms:ScheduleKeyDeletion Executed", "green"))
         print(colored("[!] The key has been scheduled for deletion.", "yellow"))
+    except: 
+        print(colored("[*] kms:ScheduleKeyDeletion Execution Failed", "red"))
 
-
-    # # CancelKeyDeletion
+    #CancelKeyDeletion
     try:
         client.cancel_key_deletion(KeyId=resource_name)
         print(colored("[*] Key deletion canceled. Key is now enabled.", "yellow"))

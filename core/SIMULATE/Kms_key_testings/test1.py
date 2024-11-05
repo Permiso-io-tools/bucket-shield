@@ -7,11 +7,9 @@ def kms_related_events_test1(resource_name, client, attack_service, account, reg
     #DisableKey
     try:
         client.disable_key(KeyId=resource_name)
-        #print("[*] kms:DisableKey Executed")
-        print (colored("[*] kms:DisableKey Executed", "green"))
+        print(colored("[*] kms:DisableKey Executed", "green"))
     except: 
-        #print("[*] kms:DisableKey Execution Failed")
-        print (colored("[*] kms:DisableKey Execution Failed", "red"))
+        print(colored("[*] kms:DisableKey Execution Failed", "red"))
 
     # EnableKey
     try:

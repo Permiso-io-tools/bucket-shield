@@ -30,7 +30,7 @@ def authWithAccessAndSecretAndSessionToken(AccessKey, SecretKey, SessionToken, U
         )
         return session.client(Service, config=session_config)
 
-def authWithProfile(Profile, UserAgent, Service, RegionName= None):
+def authWithProfile(Profile, UserAgent, Service, RegionName=None):
     session = boto3.Session(
         profile_name=Profile,
         region_name=RegionName
@@ -42,12 +42,10 @@ def authWithProfile(Profile, UserAgent, Service, RegionName= None):
             user_agent=UserAgent
         )
         return session.client(Service, config=session_config)
-    
+
 def auth_client(profile, region, service):
     if profile:
-        print(f"Authenticating using profile {profile} on service {service} and region {region}")
         return authWithProfile(Profile=profile, UserAgent=None, Service=service, RegionName=region)
     else:
         print("Please provide an AWS profile")
         return None
-

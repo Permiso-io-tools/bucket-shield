@@ -5,11 +5,10 @@ from botocore.exceptions import ClientError
 
 def bucket_related_events_test4(resource_name, client, attack_service, account, region):
 
-    # #DeleteBucket
+    #DeleteBucket
     try:
-            client.delete_bucket(Bucket=resource_name)
-            print("[*] s3:DeleteBucket Executed")
-            print (colored("[*] s3:DeleteBucket Executed", "green"))
+        client.delete_bucket(Bucket=resource_name)
+        print(colored("[*] s3:DeleteBucket Executed", "green"))
     except: 
-            print("[*] s3:DeleteBucket Execution Failed")
-            print (colored("[*] s3:DeleteBucket Execution Failed", "red"))
+        print("[*] s3:DeleteBucket Execution Failed")
+        print(colored("[*] s3:DeleteBucket Execution Failed", "red"))

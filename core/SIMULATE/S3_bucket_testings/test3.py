@@ -6,14 +6,12 @@ import json
 
 def bucket_related_events_test3(resource_name, client, attack_service, account, region):
 
-#PutBucketAcl
+    #PutBucketAcl
     try:
         client.put_bucket_acl(Bucket=resource_name, ACL='public-read')
-        #print("[*] s3:PutBucketAcl Executed")
-        print (colored("[*] s3:PutBucketAcl Executed", "green"))
+        print(colored("[*] s3:PutBucketAcl Executed", "green"))
     except ClientError as e:
         error_message = e.response['Error']['Message']
         print(colored(f"[*] s3:PutBucketAcl Execution Failed: {error_message}", "red"))
     except Exception as e: 
-        #print("[*] s3:PutBucketAcl Execution Failed")
         print(colored(f"[*] An unexpected error occurred: {str(e)}", "red"))
