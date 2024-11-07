@@ -17,7 +17,7 @@ if __name__ == '__main__':
     if args.usage == "IDENTIFY":
         runIdentify(args=args)
 
-    if args.usage == "FLOWLOGS":
+    elif args.usage == "FLOWLOGS":
         runFlowLogs(args=args)
 
     elif args.usage == "DETECT":
