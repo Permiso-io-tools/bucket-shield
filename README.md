@@ -4,8 +4,7 @@
 
 **Permiso:** [https://permiso.io](https://permiso.io/)
 
-**Read our release blog:** https://permiso.io/blog
-bucketshield-track-log-flow-secure-buckets-simulate-threats
+**Read our release blog:** https://permiso.io/blog/bucketshield-track-log-flow-secure-buckets-simulate-threats
 
 **Release Date: November 2nd, 2024**
 
